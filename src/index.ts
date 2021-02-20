@@ -30,10 +30,11 @@ function postAsUser(headline: string, spoiler: string, archivedUrl: string, clie
         subredditName: "ysac_dev",
         title: `${headline} | ${spoiler}`,
         url: archivedUrl
-    }).then(()=>{alert('Posted!')});
+    }).then(()=>{alert('Posted! UPDATE')});
 }
 
 function submitHandler(e: Event) {
+    alert("Event! 3");
     e.preventDefault();
     const submitter = (e.target as Element);
     const urlToArchive = (submitter.querySelector("input[name='url_to_archive']") as HTMLInputElement).value;
