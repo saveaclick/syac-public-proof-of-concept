@@ -30,7 +30,7 @@ function postAsUser(headline: string, spoiler: string, archivedUrl: string, clie
         subredditName: "ysac_dev",
         title: `${headline} | ${spoiler}`,
         url: archivedUrl
-    }).then(()=>{alert('Posted! UPDATE')});
+    }).then(()=>{alert('Posted!')});
 }
 
 function submitHandler(e: Event) {
