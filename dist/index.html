@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SYAC -- Proof of Concept</title>
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <form onsubmit="handleSubmit(event)">
+            <style>label, input{display: block;}</style>
+            <label for="url_to_archive">Enter the URL you want to post to reddit:</label>
+            <input name="url_to_archive" type="url" />
+            <label for="spoiler">In a few words, what is the main point of the article?</label>
+            <input name="spoiler" type="text" />
+
+            <label for="clientId">Paste in the client id from <a href="https://www.reddit.com/prefs/apps/" target="_blank">your reddit preferences</a> below</label>
+            <input name="clientId" type="text" />
+            <label for="clientSecret">Paste in the client secret from from <a href="https://www.reddit.com/prefs/apps/" target="_blank">your reddit preferences</a> below</label>
+            <input name="clientSecret" type="text" />
+            <label for="token">Paste <a href="https://not-an-aardvark.github.io/reddit-oauth-helper/" target="_blank">accessToken</a> here with submit permission (not refresh token):</label>
+            <input name="token" type="text" />
+            <input type="submit" value="Create Post" />
+        </form>
+    </body>
+</html>
