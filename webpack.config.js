@@ -19,5 +19,9 @@ module.exports = {
         "buffer": require.resolve("buffer/") 
      },
      extensions: ['.ts', '.js'],
+     
+    },
+    devServer: {
+      contentBase: path.join(__dirname, 'dist')
     }
 }

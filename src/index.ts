@@ -34,7 +34,7 @@ function postAsUser(headline: string, spoiler: string, archivedUrl: string, clie
 }
 
 function submitHandler(e: Event) {
-    alert("Event! 3");
+    console.log("Create Post Pressed!");
     e.preventDefault();
     const submitter = (e.target as Element);
     const urlToArchive = (submitter.querySelector("input[name='url_to_archive']") as HTMLInputElement).value;
