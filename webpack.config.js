@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: './src/index.ts',
+    mode: 'development',
     module: {
       rules: [
         {
@@ -18,5 +19,9 @@ module.exports = {
         "buffer": require.resolve("buffer/") 
      },
      extensions: ['.ts', '.js'],
+     
+    },
+    devServer: {
+      contentBase: path.join(__dirname, 'dist')
     }
 }
